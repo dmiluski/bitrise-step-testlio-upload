@@ -55,4 +55,13 @@ inputs:
       summary: Your Testlio Collection ID
       title: Testlio Collection ID
 
+  - testlio_app_name: $TESTLIO_APP_NAME
+    opts:
+      description: |
+        Application name used for submission
+      is_required: true
+      is_sensitive: false
+      summary: Your Testlio App name
+      title: Testlio App name
+
 outputs:
