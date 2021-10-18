@@ -27,7 +27,11 @@ run_if: ""
 toolkit:
   bash:
     entry_file: step.sh
-
+deps:
+  brew:
+  - name: curl
+  apt_get:
+  - name: curl
 inputs:
   - opts:
       description: |
