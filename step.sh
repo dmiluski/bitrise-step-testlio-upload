@@ -1,8 +1,6 @@
-#!/usr/bin/env bash
-# fail if any commands fails
-set -e
-# debug log
-set -x
+
+#!/bin/bash
+set -ex
 
 curl --location --request POST "https://api.testlio.com/build/v3/collections/${testlio_collection_id}/builds" \
 -F "file=@$BITRISE_IPA_PATH" \
