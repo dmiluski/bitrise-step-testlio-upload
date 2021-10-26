@@ -2,7 +2,7 @@
 #!/bin/bash
 set -ex
 
-curl --location --request POST "https://api.testlio.com/build/v3/collections/${testlio_collection_id}/builds" \
+curl --location --request POST "https://api.testlio.com/build/v3/collections/${TESTLIO_COLLECTION_ID}/builds" \
 -F "file=@$BITRISE_IPA_PATH" \
 -F name="${TESTLIO_APP_NAME}" \
 --header 'Content-Type: multipart/form-data' \

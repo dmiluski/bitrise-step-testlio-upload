@@ -41,7 +41,7 @@ inputs:
         The app file you want to upload to BrowserStack, usually $BITRISE\_IPA\_PATH
       title: A Bitrise generated IPA path
     upload_path: $BITRISE_IPA_PATH
-  - testlio_api_token: $TESTLIO_API_TOKEN
+  - TESTLIO_API_TOKEN:
     opts:
       description: |
         Authentication to the API is performed via ​JWT​.
@@ -50,7 +50,7 @@ inputs:
       summary: Your Testlio API token
       title: Testlio API Token
 
-  - testlio_collection_id: $TESTLIO_COLLECTION_ID
+  - TESTLIO_COLLECTION_ID:
     opts:
       description: |
         Identifier of the collection
@@ -59,7 +59,7 @@ inputs:
       summary: Your Testlio Collection ID
       title: Testlio Collection ID
 
-  - testlio_app_name: $TESTLIO_APP_NAME
+  - TESTLIO_APP_NAME:
     opts:
       description: |
         Application name used for submission
